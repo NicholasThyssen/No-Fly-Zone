@@ -1,0 +1,146 @@
+feature,dtype,non_null,missing_pct,unique_non_null,role
+process,str,57514,0.0,2,numeric survey field
+month,str,57514,0.0,12,numeric survey field
+flight_type,str,57514,0.0,2,numeric survey field
+connection,str,57514,0.0,3,numeric survey field
+ticket_purchased_by,str,57514,0.0,3,numeric survey field
+ticket_purchase_channel,str,41374,28.062732552074277,12,numeric survey field
+transport_to_airport,str,57513,0.0017387070974023715,16,numeric survey field
+has_disability,str,57514,0.0,5,numeric survey field
+uses_assistive_device,str,55813,2.957540772681434,11,numeric survey field
+requested_special_assistance,str,56487,1.7856521890322359,11,numeric survey field
+disembarkation_method_used,str,33565,41.6402962756894,11,numeric survey field
+disembarkation_method_rating,float64,330,99.42622665785721,5,numeric survey field
+used_parking,str,28245,50.89021803387001,3,numeric survey field
+curbside_dropoff_ease,float64,20958,63.5601766526411,5,numeric survey field
+transport_options_to_airport,float64,16829,70.73929825781549,5,numeric survey field
+checkin_method,str,46538,19.08404910108843,6,numeric survey field
+checkin_process,float64,8489,85.24011545015127,5,numeric survey field
+checkin_queue_wait_time,float64,1843,96.79556281948743,5,numeric survey field
+checkin_queue_organization,float64,1822,96.83207566853288,5,numeric survey field
+self_service_kiosk_quantity,float64,340,99.40883958688319,5,numeric survey field
+checkin_counter_quantity,float64,1582,97.24936537190945,5,numeric survey field
+staff_courtesy,float64,1587,97.24067183642244,5,numeric survey field
+checkin_service_time,float64,1587,97.24067183642244,5,numeric survey field
+ticket_purchase_process,float64,17100,70.26810863441945,5,numeric survey field
+airline_service,float64,55,99.90437110964287,5,numeric survey field
+security_screening_process,float64,22238,61.334631567966056,5,numeric survey field
+security_queue_wait_time,float64,2855,95.03599123691623,5,numeric survey field
+security_queue_organization,float64,2830,95.07945891435129,5,numeric survey field
+security_staff_service,float64,2853,95.03946865111104,5,numeric survey field
+immigration_control,float64,5480,90.471885106235,5,numeric survey field
+immigration_queue_wait_time,float64,667,98.84028236603261,5,numeric survey field
+immigration_queue_organization,float64,657,98.85766943700665,5,numeric survey field
+immigration_staff_service,float64,650,98.86984038668845,5,numeric survey field
+service_window_quantity,float64,663,98.84723719442223,5,numeric survey field
+customs_control,float64,2198,96.17832179990958,5,numeric survey field
+customs_queue_wait_time,float64,235,99.59140383211044,5,numeric survey field
+customs_queue_organization,float64,233,99.59488124630525,5,numeric survey field
+customs_staff_service,float64,226,99.60705219598707,5,numeric survey field
+food_beverage_outlets,float64,15345,73.3195395903606,5,numeric survey field
+food_beverage_outlet_quantity,float64,6116,89.36606739228709,5,numeric survey field
+food_beverage_quality_variety,float64,6144,89.31738359355982,5,numeric survey field
+food_beverage_price_quality,float64,6156,89.29651910839101,5,numeric survey field
+retail_outlets,float64,5814,89.89115693570261,5,numeric survey field
+retail_outlet_quantity,float64,1758,96.94335292276664,5,numeric survey field
+retail_quality_variety,float64,1757,96.94509162986404,5,numeric survey field
+retail_price_quality,float64,1751,96.95552387244845,5,numeric survey field
+parking,float64,1288,97.76054525854575,5,numeric survey field
+parking_facility_quality,float64,494,99.14107869388323,5,numeric survey field
+parking_space_availability_ease,float64,495,99.13933998678583,5,numeric survey field
+parking_terminal_access_ease,float64,495,99.13933998678583,5,numeric survey field
+parking_value_for_money,float64,485,99.15672705775985,5,numeric survey field
+location_and_movement,float64,57298,0.37556073303891224,5,numeric survey field
+signage,float64,14488,74.80961157283444,5,numeric survey field
+flight_information_display_availability,float64,8182,85.7738985290538,5,numeric survey field
+terminal_accessibility,float64,277,99.51837813401954,5,numeric survey field
+boarding_lounge_comfort,float64,33240,42.20537608234517,5,numeric survey field
+thermal_comfort,float64,13597,76.35879959661995,5,numeric survey field
+acoustic_comfort,float64,13563,76.41791563793163,5,numeric survey field
+seat_availability,float64,13587,76.37618666759398,5,numeric survey field
+reserved_seat_availability,float64,362,99.37058803074034,5,numeric survey field
+power_outlet_availability,float64,24117,58.067600931947005,5,numeric survey field
+airport_internet,float64,8151,85.82779844907327,5,numeric survey field
+internet_connection_speed,float64,1887,96.71905970720172,5,numeric survey field
+network_access_ease,float64,1919,96.66342108008485,5,numeric survey field
+restrooms,float64,22650,60.618284243836285,5,numeric survey field
+restroom_quantity,float64,7306,87.29700594637826,5,numeric survey field
+restroom_cleanliness,float64,7538,86.89362589978093,5,numeric survey field
+restroom_maintenance,float64,7458,87.03272246757311,5,numeric survey field
+overall_airport_cleanliness,float64,33211,42.25579858816984,5,numeric survey field
+baggage_claim_process,float64,16907,70.6036791042181,5,numeric survey field
+baggage_carousel_identification_ease,float64,4918,91.44903849497513,5,numeric survey field
+baggage_claim_time,float64,4899,91.48207392982577,5,numeric survey field
+baggage_integrity,float64,4490,92.19320513266335,5,numeric survey field
+nationality,str,57514,0.0,2,numeric survey field
+gender,str,57514,0.0,2,numeric survey field
+age_group,str,33283,42.130611677156864,6,numeric survey field
+education,str,33283,42.130611677156864,7,numeric survey field
+household_income,str,33283,42.130611677156864,8,numeric survey field
+traveling_alone,str,33283,42.130611677156864,2,numeric survey field
+number_of_companions,str,11371,80.22916159543763,4,numeric survey field
+trip_purpose,str,33283,42.130611677156864,16,numeric survey field
+trips_last_12_months,str,57514,0.0,6,numeric survey field
+used_airport_before_last_12_months,str,54228,5.713391522064192,3,numeric survey field
+arrival_lead_time,float64,22307,61.2146607782453,6,numeric survey field
+connection_wait_time,float64,10975,80.91768960600896,6,numeric survey field
+liked,int64,57514,0.0,2,binary target
+disembarkation_method_rating_is_applicable,int64,57514,0.0,2,applicability indicator
+curbside_dropoff_ease_is_applicable,int64,57514,0.0,2,applicability indicator
+transport_options_to_airport_is_applicable,int64,57514,0.0,2,applicability indicator
+checkin_process_is_applicable,int64,57514,0.0,2,applicability indicator
+checkin_queue_wait_time_is_applicable,int64,57514,0.0,2,applicability indicator
+checkin_queue_organization_is_applicable,int64,57514,0.0,2,applicability indicator
+self_service_kiosk_quantity_is_applicable,int64,57514,0.0,2,applicability indicator
+checkin_counter_quantity_is_applicable,int64,57514,0.0,2,applicability indicator
+staff_courtesy_is_applicable,int64,57514,0.0,2,applicability indicator
+checkin_service_time_is_applicable,int64,57514,0.0,2,applicability indicator
+ticket_purchase_process_is_applicable,int64,57514,0.0,2,applicability indicator
+airline_service_is_applicable,int64,57514,0.0,2,applicability indicator
+security_screening_process_is_applicable,int64,57514,0.0,2,applicability indicator
+security_queue_wait_time_is_applicable,int64,57514,0.0,2,applicability indicator
+security_queue_organization_is_applicable,int64,57514,0.0,2,applicability indicator
+security_staff_service_is_applicable,int64,57514,0.0,2,applicability indicator
+immigration_queue_wait_time_is_applicable,int64,57514,0.0,2,applicability indicator
+immigration_queue_organization_is_applicable,int64,57514,0.0,2,applicability indicator
+immigration_staff_service_is_applicable,int64,57514,0.0,2,applicability indicator
+service_window_quantity_is_applicable,int64,57514,0.0,2,applicability indicator
+customs_control_is_applicable,int64,57514,0.0,2,applicability indicator
+customs_queue_wait_time_is_applicable,int64,57514,0.0,2,applicability indicator
+customs_queue_organization_is_applicable,int64,57514,0.0,2,applicability indicator
+customs_staff_service_is_applicable,int64,57514,0.0,2,applicability indicator
+food_beverage_outlets_is_applicable,int64,57514,0.0,2,applicability indicator
+food_beverage_outlet_quantity_is_applicable,int64,57514,0.0,2,applicability indicator
+food_beverage_quality_variety_is_applicable,int64,57514,0.0,2,applicability indicator
+food_beverage_price_quality_is_applicable,int64,57514,0.0,2,applicability indicator
+retail_outlets_is_applicable,int64,57514,0.0,2,applicability indicator
+retail_outlet_quantity_is_applicable,int64,57514,0.0,2,applicability indicator
+retail_quality_variety_is_applicable,int64,57514,0.0,2,applicability indicator
+retail_price_quality_is_applicable,int64,57514,0.0,2,applicability indicator
+parking_is_applicable,int64,57514,0.0,2,applicability indicator
+parking_facility_quality_is_applicable,int64,57514,0.0,2,applicability indicator
+parking_space_availability_ease_is_applicable,int64,57514,0.0,2,applicability indicator
+parking_terminal_access_ease_is_applicable,int64,57514,0.0,2,applicability indicator
+parking_value_for_money_is_applicable,int64,57514,0.0,2,applicability indicator
+signage_is_applicable,int64,57514,0.0,2,applicability indicator
+flight_information_display_availability_is_applicable,int64,57514,0.0,2,applicability indicator
+terminal_accessibility_is_applicable,int64,57514,0.0,2,applicability indicator
+boarding_lounge_comfort_is_applicable,int64,57514,0.0,2,applicability indicator
+thermal_comfort_is_applicable,int64,57514,0.0,2,applicability indicator
+acoustic_comfort_is_applicable,int64,57514,0.0,2,applicability indicator
+seat_availability_is_applicable,int64,57514,0.0,2,applicability indicator
+reserved_seat_availability_is_applicable,int64,57514,0.0,2,applicability indicator
+power_outlet_availability_is_applicable,int64,57514,0.0,2,applicability indicator
+airport_internet_is_applicable,int64,57514,0.0,2,applicability indicator
+internet_connection_speed_is_applicable,int64,57514,0.0,2,applicability indicator
+network_access_ease_is_applicable,int64,57514,0.0,2,applicability indicator
+restrooms_is_applicable,int64,57514,0.0,2,applicability indicator
+restroom_quantity_is_applicable,int64,57514,0.0,2,applicability indicator
+restroom_cleanliness_is_applicable,int64,57514,0.0,2,applicability indicator
+restroom_maintenance_is_applicable,int64,57514,0.0,2,applicability indicator
+baggage_claim_process_is_applicable,int64,57514,0.0,2,applicability indicator
+baggage_carousel_identification_ease_is_applicable,int64,57514,0.0,2,applicability indicator
+baggage_claim_time_is_applicable,int64,57514,0.0,2,applicability indicator
+baggage_integrity_is_applicable,int64,57514,0.0,2,applicability indicator
+arrival_lead_time_is_applicable,int64,57514,0.0,2,applicability indicator
+connection_wait_time_is_applicable,int64,57514,0.0,2,applicability indicator

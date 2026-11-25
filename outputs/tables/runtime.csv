@@ -1,0 +1,18 @@
+model,seconds_including_cv_if_run
+Majority baseline,4.155490299977828
+Logistic regression,7.021450800006278
+Decision tree,5.375310299976263
+KNN,28.286559999978635
+RBF SVM,542.637287999969
+Gaussian naive Bayes,5.724219399970025
+Random forest,12.091513800027315
+Bagging,21.697460199997295
+AdaBoost,39.89974159997655
+Histogram boosting,15.63042600004701
+Grouped stacking,28.946041100018192
+Keras neural network,14.17385830002604
+Tuned histogram boosting,76.91673170001013
+Selected logistic regression,28.53685899998527
+RFE logistic regression (80),39.65398090000963
+Boosting without aggregates,6.455836300039664
+Context-only boosting,2.8244231999851763

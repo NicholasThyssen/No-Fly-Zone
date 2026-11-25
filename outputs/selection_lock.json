@@ -1,0 +1,8 @@
+{
+  "selected_model": "Histogram boosting",
+  "selection_metric": "validation macro F1 at default decision rule",
+  "validation_macro_f1": 0.8388055206826612,
+  "validation_selected_threshold": 0.52,
+  "dataset_sha256": "3cdf9ba9e702bf542ff9a24e9f5b9b571798fd277d778e0f0597cce858657be2",
+  "seed": 42
+}

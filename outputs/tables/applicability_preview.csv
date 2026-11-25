@@ -1,0 +1,11 @@
+feature,applicable_but_missing,not_applicable_but_observed
+retail_outlets,16399,0
+airport_internet,15061,0
+checkin_process,14794,0
+food_beverage_outlets,10732,0
+transport_options_to_airport,9756,0
+ticket_purchase_process,9689,0
+curbside_dropoff_ease,7277,0
+security_screening_process,6525,0
+restrooms,6297,0
+power_outlet_availability,5522,0

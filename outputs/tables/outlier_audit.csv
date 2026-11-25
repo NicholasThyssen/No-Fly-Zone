@@ -1,0 +1,3 @@
+feature,q1,q3,iqr,outside_iqr,q01,q99
+arrival_lead_time,4500.0,9900.0,5400.0,0,2700.0,10800.0
+connection_wait_time,6300.0,10800.0,4500.0,0,2700.0,10800.0

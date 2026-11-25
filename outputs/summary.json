@@ -1,0 +1,552 @@
+{
+  "raw_rows": 57514,
+  "columns": 145,
+  "exact_duplicates_removed": 13733,
+  "clean_rows": 43781,
+  "raw_positive_count": 28757,
+  "clean_positive_count": 19582,
+  "missing_fraction": 0.3985575925741619,
+  "conflicting_profile_groups": 881,
+  "splits": [
+    {
+      "split": "train",
+      "rows": 26269,
+      "positive_rate": 0.4472952910274468,
+      "unique_profiles": 24676
+    },
+    {
+      "split": "validation",
+      "rows": 8756,
+      "positive_rate": 0.4472361809045226,
+      "unique_profiles": 8248
+    },
+    {
+      "split": "test",
+      "rows": 8756,
+      "positive_rate": 0.4472361809045226,
+      "unique_profiles": 8278
+    }
+  ],
+  "selection": {
+    "selected_model": "Histogram boosting",
+    "selection_metric": "validation macro F1 at default decision rule",
+    "validation_macro_f1": 0.8388055206826612,
+    "validation_selected_threshold": 0.52,
+    "dataset_sha256": "3cdf9ba9e702bf542ff9a24e9f5b9b571798fd277d778e0f0597cce858657be2",
+    "seed": 42
+  },
+  "selected_test_metrics": {
+    "accuracy": 0.8381681132937414,
+    "balanced_accuracy": 0.8363822081901755,
+    "precision": 0.8188313345241133,
+    "recall": 0.8194586312563841,
+    "f1": 0.81914486279515,
+    "macro_f1": 0.8363575920878716,
+    "roc_auc": 0.9151096318135389,
+    "average_precision": 0.8977800908775593
+  },
+  "baseline_test_metrics": {
+    "accuracy": 0.5527638190954773,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "macro_f1": 0.3559870550161812,
+    "roc_auc": 0.5,
+    "average_precision": 0.4472361809045226
+  },
+  "context_test_metrics": {
+    "accuracy": 0.609639104613979,
+    "balanced_accuracy": 0.594493453431145,
+    "precision": 0.5820698747528016,
+    "recall": 0.45097037793667005,
+    "f1": 0.5082014388489209,
+    "macro_f1": 0.5922942433782571,
+    "roc_auc": 0.6489207236258959,
+    "average_precision": 0.574700826716049
+  },
+  "test_results": [
+    {
+      "model": "Histogram boosting",
+      "accuracy": 0.8381681132937414,
+      "balanced_accuracy": 0.8363822081901755,
+      "precision": 0.8188313345241133,
+      "recall": 0.8194586312563841,
+      "f1": 0.81914486279515,
+      "macro_f1": 0.8363575920878716,
+      "roc_auc": 0.9151096318135389,
+      "average_precision": 0.8977800908775593
+    },
+    {
+      "model": "Tuned histogram boosting",
+      "accuracy": 0.8370260392873459,
+      "balanced_accuracy": 0.835081019593277,
+      "precision": 0.8185308420783209,
+      "recall": 0.8166496424923391,
+      "f1": 0.8175891601687332,
+      "macro_f1": 0.8351543695363224,
+      "roc_auc": 0.9151851853805959,
+      "average_precision": 0.8974006614040186
+    },
+    {
+      "model": "Grouped stacking",
+      "accuracy": 0.8342850616719963,
+      "balanced_accuracy": 0.8317729129909927,
+      "precision": 0.819052549831737,
+      "recall": 0.8079673135852911,
+      "f1": 0.8134721686592107,
+      "macro_f1": 0.832195860349332,
+      "roc_auc": 0.9146334385736837,
+      "average_precision": 0.8984513132069032
+    },
+    {
+      "model": "Boosting without aggregates",
+      "accuracy": 0.8363407948835084,
+      "balanced_accuracy": 0.8339492989135482,
+      "precision": 0.8207181606819943,
+      "recall": 0.8112870275791624,
+      "f1": 0.8159753435212533,
+      "macro_f1": 0.8343115792156395,
+      "roc_auc": 0.9130895235904405,
+      "average_precision": 0.8968824360869195
+    },
+    {
+      "model": "Random forest",
+      "accuracy": 0.8323435358611238,
+      "balanced_accuracy": 0.828871065094252,
+      "precision": 0.8232963549920761,
+      "recall": 0.7959652706843718,
+      "f1": 0.8094001558036874,
+      "macro_f1": 0.8298784673004166,
+      "roc_auc": 0.9125901155674114,
+      "average_precision": 0.8967268152504361
+    },
+    {
+      "model": "Logistic regression",
+      "accuracy": 0.8337140246687985,
+      "balanced_accuracy": 0.8319632742130189,
+      "precision": 0.8132959755476312,
+      "recall": 0.8153728294177732,
+      "f1": 0.8143330782963529,
+      "macro_f1": 0.8318821544532438,
+      "roc_auc": 0.912358020496543,
+      "average_precision": 0.8945644571877824
+    },
+    {
+      "model": "Selected logistic regression",
+      "accuracy": 0.8322293284604843,
+      "balanced_accuracy": 0.8304496703500789,
+      "precision": 0.8117197452229299,
+      "recall": 0.813585291113381,
+      "f1": 0.8126514475194491,
+      "macro_f1": 0.8303770111136692,
+      "roc_auc": 0.9113935517774082,
+      "average_precision": 0.8937073569721379
+    },
+    {
+      "model": "RFE logistic regression (80)",
+      "accuracy": 0.8314298766560073,
+      "balanced_accuracy": 0.8295071501532176,
+      "precision": 0.8117015840572305,
+      "recall": 0.8112870275791624,
+      "f1": 0.8114942528735632,
+      "macro_f1": 0.8295232057592357,
+      "roc_auc": 0.910504240918799,
+      "average_precision": 0.8926784492418415
+    },
+    {
+      "model": "Bagging",
+      "accuracy": 0.8278894472361809,
+      "balanced_accuracy": 0.8246958863404217,
+      "precision": 0.8158929976396538,
+      "recall": 0.7944330949948928,
+      "f1": 0.8050200543407944,
+      "macro_f1": 0.8254886635804963,
+      "roc_auc": 0.9069703177892774,
+      "average_precision": 0.8873261144064337
+    },
+    {
+      "model": "Keras neural network",
+      "accuracy": 0.8324577432617634,
+      "balanced_accuracy": 0.8289987464017086,
+      "precision": 0.8233430155796144,
+      "recall": 0.7962206332992849,
+      "f1": 0.8095547189406724,
+      "macro_f1": 0.8299990946115331,
+      "roc_auc": 0.9106164369106611,
+      "average_precision": 0.8917344606598554
+    },
+    {
+      "model": "AdaBoost",
+      "accuracy": 0.8272042028323435,
+      "balanced_accuracy": 0.8268548611755966,
+      "precision": 0.7968865826538176,
+      "recall": 0.8235444330949949,
+      "f1": 0.8099962325756624,
+      "macro_f1": 0.8257751610045555,
+      "roc_auc": 0.9093471158797559,
+      "average_precision": 0.8874902591139656
+    },
+    {
+      "model": "RBF SVM",
+      "accuracy": 0.8282320694380996,
+      "balanced_accuracy": 0.8253958120531154,
+      "precision": 0.8138990109318064,
+      "recall": 0.7985188968335035,
+      "f1": 0.8061356019592678,
+      "macro_f1": 0.8259712252158447,
+      "roc_auc": 0.8972885660861565,
+      "average_precision": 0.8689540709762804
+    },
+    {
+      "model": "Decision tree",
+      "accuracy": 0.8168113293741435,
+      "balanced_accuracy": 0.8134564490667657,
+      "precision": 0.8034120734908137,
+      "recall": 0.7816649642492339,
+      "f1": 0.7923893347139529,
+      "macro_f1": 0.814240855789431,
+      "roc_auc": 0.8910516244016917,
+      "average_precision": 0.862574770323379
+    },
+    {
+      "model": "KNN",
+      "accuracy": 0.8177249885792599,
+      "balanced_accuracy": 0.8162816881790325,
+      "precision": 0.7924861321230459,
+      "recall": 0.8026046986721144,
+      "f1": 0.7975133214920072,
+      "macro_f1": 0.8158906171322964,
+      "roc_auc": 0.8953976428553339,
+      "average_precision": 0.8753316442818689
+    },
+    {
+      "model": "Gaussian naive Bayes",
+      "accuracy": 0.7157377798081316,
+      "balanced_accuracy": 0.7290753551861826,
+      "precision": 0.6353119666224161,
+      "recall": 0.855464759959142,
+      "f1": 0.7291326586135597,
+      "macro_f1": 0.7150409177965071,
+      "roc_auc": 0.7786689909588972,
+      "average_precision": 0.6820494082031354
+    },
+    {
+      "model": "Context-only boosting",
+      "accuracy": 0.609639104613979,
+      "balanced_accuracy": 0.594493453431145,
+      "precision": 0.5820698747528016,
+      "recall": 0.45097037793667005,
+      "f1": 0.5082014388489209,
+      "macro_f1": 0.5922942433782571,
+      "roc_auc": 0.6489207236258959,
+      "average_precision": 0.574700826716049
+    },
+    {
+      "model": "Majority baseline",
+      "accuracy": 0.5527638190954773,
+      "balanced_accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "macro_f1": 0.3559870550161812,
+      "roc_auc": 0.5,
+      "average_precision": 0.4472361809045226
+    }
+  ],
+  "validation_results": [
+    {
+      "model": "Histogram boosting",
+      "accuracy": 0.8404522613065326,
+      "balanced_accuracy": 0.8391308385179683,
+      "precision": 0.8184576485461441,
+      "recall": 0.826608784473953,
+      "f1": 0.8225130224876127,
+      "macro_f1": 0.8388055206826612,
+      "roc_auc": 0.9195168528773668,
+      "average_precision": 0.9009721557894157
+    },
+    {
+      "model": "Tuned histogram boosting",
+      "accuracy": 0.8396528095020558,
+      "balanced_accuracy": 0.838188318321107,
+      "precision": 0.8184584178498986,
+      "recall": 0.8243105209397344,
+      "f1": 0.8213740458015267,
+      "macro_f1": 0.8379559827018408,
+      "roc_auc": 0.9196956858491123,
+      "average_precision": 0.9008862608178998
+    },
+    {
+      "model": "Grouped stacking",
+      "accuracy": 0.839081772498858,
+      "balanced_accuracy": 0.8370380258148389,
+      "precision": 0.8216576853990248,
+      "recall": 0.8176710929519918,
+      "f1": 0.8196595417893254,
+      "macro_f1": 0.8371934166313366,
+      "roc_auc": 0.9163018955925677,
+      "average_precision": 0.899362807487885
+    },
+    {
+      "model": "Boosting without aggregates",
+      "accuracy": 0.8386249428962996,
+      "balanced_accuracy": 0.8366735537190083,
+      "precision": 0.8204865556978232,
+      "recall": 0.8181818181818182,
+      "f1": 0.8193325661680092,
+      "macro_f1": 0.8367635898634906,
+      "roc_auc": 0.9186221867903662,
+      "average_precision": 0.9003385098200276
+    },
+    {
+      "model": "Random forest",
+      "accuracy": 0.8371402466879854,
+      "balanced_accuracy": 0.834282431052094,
+      "precision": 0.8248956158663883,
+      "recall": 0.8072012257405515,
+      "f1": 0.8159525038719669,
+      "macro_f1": 0.8349529008503629,
+      "roc_auc": 0.914285164065204,
+      "average_precision": 0.8960410890243021
+    },
+    {
+      "model": "Logistic regression",
+      "accuracy": 0.8362265874828689,
+      "balanced_accuracy": 0.8347966384993964,
+      "precision": 0.8141772151898734,
+      "recall": 0.8212461695607763,
+      "f1": 0.8176964149504196,
+      "macro_f1": 0.8345168784268996,
+      "roc_auc": 0.9141349538658946,
+      "average_precision": 0.8957655046844571
+    },
+    {
+      "model": "Selected logistic regression",
+      "accuracy": 0.8358839652809502,
+      "balanced_accuracy": 0.8343160924876962,
+      "precision": 0.8146737750698146,
+      "recall": 0.8194586312563841,
+      "f1": 0.8170591979630808,
+      "macro_f1": 0.8341276107864488,
+      "roc_auc": 0.9133846679019746,
+      "average_precision": 0.8962862239528822
+    },
+    {
+      "model": "RFE logistic regression (80)",
+      "accuracy": 0.8355413430790315,
+      "balanced_accuracy": 0.8340793016993222,
+      "precision": 0.8135764944275583,
+      "recall": 0.8202247191011236,
+      "f1": 0.8168870803662258,
+      "macro_f1": 0.8338166745114711,
+      "roc_auc": 0.9126449604926598,
+      "average_precision": 0.8933288718972109
+    },
+    {
+      "model": "Bagging",
+      "accuracy": 0.8322293284604843,
+      "balanced_accuracy": 0.8295721515461045,
+      "precision": 0.8175447703088502,
+      "recall": 0.8043922369765066,
+      "f1": 0.8109151756982881,
+      "macro_f1": 0.8300701301872329,
+      "roc_auc": 0.9095377145257009,
+      "average_precision": 0.8909072834389001
+    },
+    {
+      "model": "Keras neural network",
+      "accuracy": 0.8316582914572864,
+      "balanced_accuracy": 0.8285681121738323,
+      "precision": 0.819800942902043,
+      "recall": 0.7992849846782432,
+      "f1": 0.8094129816395138,
+      "macro_f1": 0.8293332038490062,
+      "roc_auc": 0.9138169640972826,
+      "average_precision": 0.8960254015261248
+    },
+    {
+      "model": "AdaBoost",
+      "accuracy": 0.829945180447693,
+      "balanced_accuracy": 0.829772959420559,
+      "precision": 0.7989652623798965,
+      "recall": 0.8281409601634321,
+      "f1": 0.8132915360501567,
+      "macro_f1": 0.8285813871925314,
+      "roc_auc": 0.9110442748123824,
+      "average_precision": 0.890207659748642
+    },
+    {
+      "model": "RBF SVM",
+      "accuracy": 0.8305162174508908,
+      "balanced_accuracy": 0.8280225647692451,
+      "precision": 0.8143743536711479,
+      "recall": 0.8043922369765066,
+      "f1": 0.8093525179856115,
+      "macro_f1": 0.8284015879401742,
+      "roc_auc": 0.8977253733359221,
+      "average_precision": 0.8728166509566128
+    },
+    {
+      "model": "Decision tree",
+      "accuracy": 0.8192096847875743,
+      "balanced_accuracy": 0.8162840096573498,
+      "precision": 0.8035389018995577,
+      "recall": 0.7885597548518897,
+      "f1": 0.7959788632555742,
+      "macro_f1": 0.8168349150687797,
+      "roc_auc": 0.8936154861597682,
+      "average_precision": 0.8634174053808841
+    },
+    {
+      "model": "KNN",
+      "accuracy": 0.8163544997715853,
+      "balanced_accuracy": 0.8150420187575448,
+      "precision": 0.790095525389643,
+      "recall": 0.8026046986721144,
+      "f1": 0.7963009880922219,
+      "macro_f1": 0.814557231413547,
+      "roc_auc": 0.8955598825331972,
+      "average_precision": 0.8729428650554838
+    },
+    {
+      "model": "Gaussian naive Bayes",
+      "accuracy": 0.7151667428049338,
+      "balanced_accuracy": 0.7286319528275605,
+      "precision": 0.634557153671461,
+      "recall": 0.8562308478038815,
+      "f1": 0.7289130434782609,
+      "macro_f1": 0.7144324601414404,
+      "roc_auc": 0.782883186376721,
+      "average_precision": 0.6873083089001015
+    },
+    {
+      "model": "Context-only boosting",
+      "accuracy": 0.6155778894472361,
+      "balanced_accuracy": 0.6003041136595785,
+      "precision": 0.5911199469847581,
+      "recall": 0.45556690500510727,
+      "f1": 0.5145659071243149,
+      "macro_f1": 0.5981791532218285,
+      "roc_auc": 0.644200050228349,
+      "average_precision": 0.576186886543655
+    },
+    {
+      "model": "Majority baseline",
+      "accuracy": 0.5527638190954773,
+      "balanced_accuracy": 0.5,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "macro_f1": 0.3559870550161812,
+      "roc_auc": 0.5,
+      "average_precision": 0.4472361809045226
+    }
+  ],
+  "intervals": [
+    {
+      "metric": "macro_f1",
+      "estimate": 0.8363575920878716,
+      "lower_95": 0.8281906005682718,
+      "upper_95": 0.8438142668450266
+    },
+    {
+      "metric": "roc_auc",
+      "estimate": 0.9151096318135389,
+      "lower_95": 0.9084984936170576,
+      "upper_95": 0.9211980073245275
+    }
+  ],
+  "importance_top12": [
+    {
+      "feature": "overall_airport_cleanliness",
+      "importance_mean": 0.033440921846648895,
+      "importance_std": 7.769407928535106e-05
+    },
+    {
+      "feature": "location_and_movement",
+      "importance_mean": 0.030770388760187967,
+      "importance_std": 0.0037318658338261305
+    },
+    {
+      "feature": "boarding_lounge_comfort",
+      "importance_mean": 0.028758369539236755,
+      "importance_std": 0.00667894154749494
+    },
+    {
+      "feature": "power_outlet_availability",
+      "importance_mean": 0.014019488109507816,
+      "importance_std": 0.0035275307539291297
+    },
+    {
+      "feature": "curbside_dropoff_ease",
+      "importance_mean": 0.010186648195983583,
+      "importance_std": 0.002532063324904604
+    },
+    {
+      "feature": "food_beverage_price_quality",
+      "importance_mean": 0.0092662295378196,
+      "importance_std": 0.0017172199407663631
+    },
+    {
+      "feature": "transport_options_to_airport",
+      "importance_mean": 0.009236830491384499,
+      "importance_std": 0.0014190255162312554
+    },
+    {
+      "feature": "security_screening_process",
+      "importance_mean": 0.008806946426708614,
+      "importance_std": 0.001775855724484766
+    },
+    {
+      "feature": "baggage_integrity",
+      "importance_mean": 0.008347883028846112,
+      "importance_std": 0.001188314448952637
+    },
+    {
+      "feature": "signage",
+      "importance_mean": 0.007311482942071734,
+      "importance_std": 0.003261967112211511
+    },
+    {
+      "feature": "airport_internet",
+      "importance_mean": 0.006189244086390396,
+      "importance_std": 0.0027883333638636233
+    },
+    {
+      "feature": "baggage_claim_process",
+      "importance_mean": 0.005601246334498174,
+      "importance_std": 0.0017417531341186244
+    }
+  ],
+  "neural_epochs": 29,
+  "best_neural_epoch": 19,
+  "confusion_matrix": [
+    [
+      4130,
+      710
+    ],
+    [
+      707,
+      3209
+    ]
+  ],
+  "boost_best_params": {
+    "model__l2_regularization": 10.0,
+    "model__max_leaf_nodes": 15
+  },
+  "selection_best_params": {
+    "model__class_weight": null,
+    "select__percentile": 50
+  },
+  "encoded_features": 279,
+  "selected_features": 139,
+  "versions": {
+    "python": "3.14.6",
+    "pandas": "3.0.3",
+    "numpy": "2.4.6",
+    "sklearn": "1.9.0",
+    "tensorflow": "2.22.0-rc0"
+  },
+  "source_url": "https://www.kaggle.com/datasets/rustam32/real-airline-passenger-satisfaction-dataset"
+}
